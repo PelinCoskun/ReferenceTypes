@@ -16,7 +16,10 @@ class Customer
     //default ctor
     public Customer(int id, string firstName, string lastName,string city)
     {
-        Console.WriteLine("Yapıcı blok çalıştı");
+        Id= id;
+        FirstName= firstName;
+        LastName= lastName;
+        City= city;
     }
     public int Id { get; set; }
     public string FirstName { get; set; }
