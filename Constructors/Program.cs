@@ -6,7 +6,7 @@ Customer customer3 = new Customer();
 
 Customer customer2 = new Customer(2, "Çado", "Pekto", "İstanbul");
 
-
+Console.WriteLine(customer2.FirstName);
 class Customer
 {
     public Customer()
