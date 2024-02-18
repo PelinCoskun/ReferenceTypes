@@ -8,7 +8,7 @@ Console.WriteLine("Hello, World!");
 //IPersonManager employeeManager = new EmployeeManager();
 
 ProjectManager projectManager = new ProjectManager();
-projectManager.Add(new EmployeeManager());
+projectManager.Add(new InternManager());
 
 interface IPersonManager
 {
@@ -47,6 +47,18 @@ class EmployeeManager : IPersonManager
     }
 }
 
+class InternManager : IPersonManager
+{
+    public void Add()
+    {
+        Console.WriteLine("stajyer eklendi"); ;
+    }
+
+    public void Update()
+    {
+        Console.WriteLine("stajyer güncellendi");
+    }
+}
 class ProjectManager
 {
     public void Add(IPersonManager personManager)
