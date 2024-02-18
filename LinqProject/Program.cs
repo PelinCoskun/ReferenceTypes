@@ -43,6 +43,10 @@ static List<Product> GetProducts(List<Product> products)
     return filteredProducts;
 }
 
+static List<Product> GetProductsLinq(List<Product> products)
+{
+ return products.Where(product => product.UnitPrice > 5000 && product.UnitsInStock > 3).ToList();
+}
 class Product
 {
     public int ProductId { get; set; }
